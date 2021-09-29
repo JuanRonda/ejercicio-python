@@ -1,0 +1,13 @@
+benjamin = (6,7)
+alevín = (8,9)
+infantil = (10,11)
+cadete = 12
+x = int(input())
+if(x <=7):
+    print("Es benjamín")
+elif(x <=9):
+    print("Es alevín")
+elif(x <= 11):
+    print("Es infantil")
+elif(x >= 12):
+    print("Es cadete")
