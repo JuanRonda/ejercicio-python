@@ -1,0 +1,11 @@
+a = 0
+b = 0
+while(a==b):
+    print("Introduzca dos valores distintos: ")
+    a = int(input())
+    b = int(input())
+
+if(a > b):
+    print("Es el mayor", a)
+else:
+    print("Es el mayor", b)

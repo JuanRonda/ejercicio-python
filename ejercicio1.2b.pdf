@@ -1,0 +1,4 @@
+print("Dime los farenheit: ")
+farenheit = float(input())
+grado = (farenheit - 2) / 1.8
+print("Los grados son: ", grado)

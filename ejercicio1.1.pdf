@@ -1,0 +1,5 @@
+horas = int(input("Introduce las horas: "))
+minutos = int(input("Introduce los minutso: "))
+segundos = int(input("Introduce los segundos: "))
+total = segundos + minutos * 60 + horas * 3600
+print("Los segundos que han transcurrido desde el inicio del dia son ", total)

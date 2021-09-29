@@ -1,0 +1,5 @@
+print("Dime los grados: ")
+grado = input()
+grado_float = float(grado)
+farenheit = 1.8 * grado_float + 2
+print("Los grados en farenheit ", farenheit)
