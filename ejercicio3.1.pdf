@@ -1,0 +1,9 @@
+numero = int(input())
+num2 = 1
+while(num2 <= 10):
+    resultado = numero * num2
+    num2 = num2 + 1 
+    print("La tabla del", numero, "es", resultado) 
+
+    
+    
