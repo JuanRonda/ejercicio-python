@@ -1,0 +1,72 @@
+#escritura
+
+from io import open
+
+texto = "Una linea con texto\nOotra linea con texto"
+
+#Ruta donde crearemos el fichero, w indica escritura (puntero al principio)
+fichero = open('fichero.txt', 'w')
+
+#Escribimos el texto
+fichero.write(texto)
+
+#Cerramos el fichero
+fichero.close()
+
+
+#lectura
+
+from io import open
+
+#Ruta donde leeremos el fichero, r indica lectura (por defecto ya es r)
+fichero = open('fichero.txt', 'r')
+
+#Lectura completa
+texto = fichero.read()
+
+#Cerramos el fichero
+fichero.close()
+
+print(texto)
+
+
+#lectura readlines
+
+from io import open
+fichero = open('fichero.txt','r')
+
+#Leemos creando una lista de lineas
+texto = fichero.readlines()
+
+fichero.close()
+print(texto)
+
+
+#lectura with
+
+with open("fichero.txt", "r") as fichero:
+    for linea in fichero:
+        print(linea)
+        
+  
+  
+  #extension
+  
+  from io import open
+
+#Ruta donde leeremos el fichero, a indica extension (puntero al final)
+fichero = open('fichero.txt', 'a')
+
+fichero.write('\nOtra línea más abajo del todo')
+
+fichero.close()
+
+
+#extension a+
+
+fichero = open('fichero_inventado.txt','a+')
+
+
+
+
+
