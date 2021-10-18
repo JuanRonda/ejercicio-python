@@ -68,6 +68,8 @@ fichero = open('fichero_inventado.txt','a+')
 
 
 
+manipulacion act1
+
 #escritura y lectura
 
 from io import open
@@ -85,6 +87,39 @@ texto = fichero.read()
 fichero.close()
 
 print(texto)
+
+
+
+manipulacion act2
+
+''' Realizar un menu con las opciones :
+`Listar nombres` `Escribir nuevo nombre` y Salir '''
+
+from io import open
+fichero = open('fichero.txt','w+')
+
+
+#Listar nombres
+print("Dime unos pocos de nombres: ")
+lista = []
+nombre = input()
+lista.append(nombre)
+
+#Imprimir la lista de nombres
+print(nombre)
+
+#Escribir otro nombre diferente
+fichero = open('fichero.txt', 'a')
+fichero.write('Escribir otro nombre diferente')
+
+#Imprimir el nuevo nombre 
+print("Escribe otro nombre diferente")
+nombre1 = input()
+print(nombre1)
+
+
+#Salir del fichero
+fichero.close()
 
 
 
