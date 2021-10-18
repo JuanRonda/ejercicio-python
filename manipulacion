@@ -75,7 +75,7 @@ from io import open
 #Ruta donde leeremos y escribiremos el fichero, w+ indica lectura y escritura (por defecto ya es w+)
 fichero = open('fichero.txt', 'w+')
 
-#Esperar a que se escriba algo para que el programa lo lea
+#Le decimos al programa que espere que escribamos algo 
 texto = input()
 
 #Lectura completa
